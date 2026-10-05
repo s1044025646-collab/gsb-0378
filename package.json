@@ -1,0 +1,21 @@
+{
+  "name": "shamir-teaching-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "教学用 Shamir 门限份额生成与有限域恢复后端（仅整数门限分享）",
+  "bin": {
+    "shamir-cli": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server/index.js",
+    "demo": "node dist/cli/index.js demo",
+    "cli": "node dist/cli/index.js",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
